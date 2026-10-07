@@ -1,0 +1,17 @@
+{
+  "name": "nuov",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local image OCR: CLI and web UI, powered by tesseract.js",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "ocr": "node ocr.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "multer": "^2.0.0",
+    "tesseract.js": "^7.0.0"
+  }
+}

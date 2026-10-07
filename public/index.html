@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Image OCR</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image OCR</h1>
+  <p class="hint">Drop an image below, or click to choose one. Once processed, drag over the text in the image to select and copy it — just like a scanned PDF.</p>
+
+  <div id="dropzone" class="dropzone">
+    <span>Drag &amp; drop an image here, or click to choose one</span>
+    <input id="fileInput" type="file" accept="image/*" hidden />
+  </div>
+
+  <p id="status" class="status"></p>
+
+  <div class="toolbar">
+    <button id="copyAllBtn" hidden>Copy all text</button>
+  </div>
+
+  <div id="imageWrapper" class="image-wrapper" hidden>
+    <img id="ocrImage" alt="Uploaded image" />
+  </div>
+
+  <textarea id="copyFallback" class="visually-hidden" aria-hidden="true"></textarea>
+
+  <script src="app.js"></script>
+</body>
+</html>
